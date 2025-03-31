@@ -1,0 +1,38 @@
+{
+  "welcome": "Welcome",
+  "about": "About Us",
+  "contact": "Contact Us",
+  "donate": "Donate",
+  "gallery": "Gallery",
+  "socialWork": "Social Work",
+  "home": "Home",
+  "footerText": "© 2023 My Website. All rights reserved.",
+
+  "footer": {
+    "solutions": "Solutions",
+    "marketing": "Marketing",
+    "analytics": "Analytics",
+    "automation": "Automation",
+    "commerce": "Commerce",
+    "insights": "Insights",
+
+    "support": "Support",
+    "submitTicket": "Submit ticket",
+    "documentation": "Documentation",
+    "guides": "Guides",
+
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "jobs": "Jobs",
+    "press": "Press",
+
+    "legal": "Legal",
+    "terms": "Terms of service",
+    "privacy": "Privacy policy",
+    "license": "License",
+
+    "rights": "© 2024 Your NGO Name. All rights reserved."
+  }
+  
+}
