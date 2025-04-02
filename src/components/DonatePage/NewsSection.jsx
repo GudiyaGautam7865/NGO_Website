@@ -1,5 +1,5 @@
 import React from "react";
-import WithMaterilTable from "./withMaterilTable";
+import WithMaterilTable from "./WithMaterilTable";
 
 const newsArticles = [
   {
