@@ -1,11 +1,14 @@
 {
   "welcome": "स्वागत आहे",
   "about": "आमच्याबद्दल",
-  "contact": "संपर्क करा",
-  "donate": "देणगी द्या",
+  "contactUs": "संपर्क करा",
+  "donation": "देणगी द्या",
   "gallery": "गॅलरी",
   "socialWork": "सामाजिक कार्य",
   "home": "मुख्यपृष्ठ",
+  "kalpavruksha" : "कल्पवृक्ष",
+ "balBhavan": "बालभवन ",
+  "womenDigitalMusic":"महिलाडिजिटल संगीत",
   "footerText": "© 2023 माझी वेबसाइट. सर्व हक्क राखीव.",
 
   "footer": {

@@ -1,9 +1,7 @@
-// src/components/home/HomeSlider.jsx
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-// Slide data
 const slides = [
   {
     image: "https://static.vecteezy.com/system/resources/thumbnails/041/401/578/small_2x/ai-generated-eco-art-campaign-for-an-environmental-ngo-emphasizing-harmony-with-nature-photo.jpeg",
@@ -31,7 +29,7 @@ const HomeSlider = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[70vh] overflow-hidden">
+    <div className="relative w-full h-[50vh] md:h-[70vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -46,12 +44,12 @@ const HomeSlider = () => {
           />
 
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
-            <h2 className="text-white text-3xl md:text-5xl font-bold drop-shadow-lg mb-4">
+            <h2 className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-lg mb-4">
               {slide.slogan}
             </h2>
             <Link
               to="/donation"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full text-lg font-medium transition-all"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-lg font-medium transition-all"
             >
               {t("donate")}
             </Link>

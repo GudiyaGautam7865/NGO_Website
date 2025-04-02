@@ -1,11 +1,13 @@
 {
   "welcome": "Welcome",
   "about": "About Us",
-  "contact": "Contact Us",
-  "donate": "Donate",
+  "contactUs": "Contact Us",
+  "donation": "donation",
   "gallery": "Gallery",
   "socialWork": "Social Work",
   "home": "Home",
+  "balBhavan  ":"balBhavan ",
+  "womenDigitalMusic":"womenDigitalMusic",
   "footerText": "© 2023 My Website. All rights reserved.",
 
   "footer": {

@@ -89,7 +89,7 @@ function NavLinks({ t, isScrolled }) {
       <Link to="/contact-us" className={linkStyle}>
         {t("contactUs")}
       </Link>
-
+     
       {/* Stylish Donation Button */}
       <Link
         to="/donation"

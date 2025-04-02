@@ -14,7 +14,7 @@ const BackgroundMedia = () => {
           await audioRef.current.play();
           setIsPlaying(true);
         } catch (error) {
-          console.log("Autoplay blocked. User must interact.");
+          console.log("Autoplay blocked. User must interact.",error);
         }
       }
     };
@@ -39,23 +39,23 @@ const BackgroundMedia = () => {
   };
 
   return (
-    <div className="flex flex-col items-end w-89 ml-290 mb-5 justify-end   text-white">
-        <audio ref={audioRef} src="https://sample-videos.com/audio/mp3/crowd-cheering.mp3" loop></audio>
+    <div className="flex flex-col items-center justify-center w-full p-4 text-white">
+      <audio ref={audioRef} src="https://sample-videos.com/audio/mp3/crowd-cheering.mp3" loop></audio>
 
-      <div className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
-        <h2 className="text-2xl font-semibold mb-4">Seven Continents Song</h2>
+      <div className="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center w-full max-w-sm">
+        <h2 className="text-lg font-semibold mb-3 text-center">Seven Continents Song</h2>
 
         {/* Play/Pause Button */}
         <button
           onClick={togglePlayPause}
-          className="flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition"
+          className="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition"
         >
-          {isPlaying ? <Pause size={24} /> : <Play size={24} />}
+          {isPlaying ? <Pause size={20} /> : <Play size={20} />}
           <span className="ml-2">{isPlaying ? "Pause" : "Play"}</span>
         </button>
 
         {/* Volume Control */}
-        <div className="flex items-center mt-4">
+        <div className="flex items-center mt-3 w-full px-2">
           <Volume2 className="mr-2" />
           <input
             type="range"
@@ -64,7 +64,7 @@ const BackgroundMedia = () => {
             step="0.1"
             value={volume}
             onChange={handleVolumeChange}
-            className="w-32"
+            className="w-full"
           />
         </div>
       </div>

@@ -10,8 +10,8 @@ const CoffeeCarousel = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true, // Enable autoplay
-        autoplaySpeed: 3000, // Set the speed of autoplay (in milliseconds)
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -23,7 +23,7 @@ const CoffeeCarousel = () => {
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -34,72 +34,42 @@ const CoffeeCarousel = () => {
 
     const posts = [
         {
-            imgSrc: "https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501",
-            title: "Lorem ipsum dolor sit amet.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......",
-            date: "Out 27, 2019",
+            imgSrc: "https://images.unsplash.com/photo-1596265371388-43edbaadab94",
+            title: "Aromatic Coffee Blend",
+            description: "Discover the rich taste of premium coffee beans roasted to perfection.",
+            date: "Jan 10, 2025",
         },
         {
-            imgSrc: "https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503",
-            title: "Lorem ipsum dolor sit amet.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......",
-            date: "Out 27, 2019",
+            imgSrc: "https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b",
+            title: "Morning Brew Delight",
+            description: "Start your day with the perfect cup of coffee, brewed just for you.",
+            date: "Feb 5, 2025",
         },
         {
-            imgSrc: "https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500",
-            title: "Lorem ipsum dolor sit amet.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......",
-            date: "Out 27, 2019",
-        },
-        {
-            imgSrc: "https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501",
-            title: "Lorem ipsum dolor sit amet.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......",
-            date: "Out 27, 2019",
-        },
-        {
-            imgSrc: "https://images.unsplash.com/photo-1586083702768-190ae093d34d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=305&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=505",
-            title: "Lorem ipsum dolor sit amet.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......",
-            date: "Out 27, 2019",
-        },
-        {
-            imgSrc: "https://images.unsplash.com/photo-1484656551321-a1161420a2a0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=306&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=506",
-            title: "Lorem ipsum dolor sit amet.",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......",
-            date: "Out 27, 2019",
+            imgSrc: "https://images.unsplash.com/photo-1564979268369-42032c5ca998",
+            title: "Barista's Choice",
+            description: "Handcrafted coffee blends made by the best baristas around.",
+            date: "Mar 3, 2025",
         },
     ];
 
     return (
-        <div className="container-fluid w-300 mb-15 ml-55 ">
-            <div className="row ml-5">
-                <div className="col-md-12  ">
-                <Slider {...settings} id="news-slider" className="mt-20">
-    {posts.map((post, index) => (
-        <div className="post-slide px-7 " key={index}> {/* Added px-2 for spacing */}
-            <div className="post-img relative overflow-hidden rounded-lg">
-                <img src={post.imgSrc} alt="" className="w-full h-auto" />
-                <a href="#" className="over-layer absolute top-0 left-0 w-full h-full opacity-0 bg-gradient-to-r from-blue-500 to-blue-300 transition-opacity duration-500 hover:opacity-100">
-                    <i className="fa fa-link text-white text-2xl"></i>
-                </a>
-            </div>
-            <div className="post-content bg-white p-4 rounded-lg shadow-md">
-                <h3 className="post-title text-lg font-bold">
-                    <a href="#">{post.title}</a>
-                </h3>
-                <p className="post-description text-gray-600">{post.description}</p>
-                <span className="post-date text-gray-400 text-sm">
-                    <i className="fa fa-clock-o"></i> {post.date}
-                </span>
-                <a href="#" className="read-more text-blue-500 hover:underline">read more</a>
-            </div>
-        </div>
-    ))}
-</Slider>
-
-                </div>
-            </div>
+        <div className="w-full px-4 md:px-8 lg:px-16 py-12">
+            <h2 className="text-2xl font-bold text-center mb-6">Our Coffee Selection</h2>
+            <Slider {...settings} className="overflow-hidden">
+                {posts.map((post, index) => (
+                    <div className="p-4" key={index}>
+                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src={post.imgSrc} alt="Coffee" className="w-full h-60 object-cover" />
+                            <div className="p-4">
+                                <h3 className="text-lg font-bold">{post.title}</h3>
+                                <p className="text-gray-600 text-sm mb-2">{post.description}</p>
+                                <span className="text-gray-400 text-xs">{post.date}</span>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
         </div>
     );
 };
