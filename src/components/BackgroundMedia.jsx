@@ -14,7 +14,7 @@ const BackgroundMedia = () => {
           await audioRef.current.play();
           setIsPlaying(true);
         } catch (error) {
-          console.log("Autoplay blocked. User must interact.");
+          console.log("Autoplay blocked. User must interact.", error);
         }
       }
     };
